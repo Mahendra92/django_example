@@ -20,6 +20,6 @@ def index(request):
 	return render(request, 'index.html',{'name':name, 'email':email, 'password':password})
 
 
-def show(request):
-	obj = UserProfile.objects.all()
-	return render(request, 'show.html', {'obj':obj})
+# def show(request):
+# 	obj = UserProfile.objects.all()
+# 	return render(request, 'show.html', {'obj':obj})

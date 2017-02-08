@@ -3,7 +3,7 @@ from django.contrib import admin
 
 
 
-from appdjango.views import home, index, show
+from appdjango.views import home, index
 
 urlpatterns = [
     # Examples:
@@ -13,5 +13,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^home/$', home),
     url(r'^index/$', index),
-    url(r'^show/$', show),
+    # url(r'^show/$', show),
 ]
