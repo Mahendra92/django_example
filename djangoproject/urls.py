@@ -3,7 +3,7 @@ from django.contrib import admin
 
 
 
-from appdjango.views import home, index
+from appdjango.views import *
 
 urlpatterns = [
     # Examples:
@@ -11,7 +11,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^home/$', home),
+    # url(r'^home/$', home),
     url(r'^index/$', index),
     
 ]

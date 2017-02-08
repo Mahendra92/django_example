@@ -5,8 +5,8 @@ import datetime
 # Create your views here.
 
 
-def home(request):
-	return render(request, 'home.html')
+# def home(request):
+# 	return render(request, 'home.html')
 
 def index(request):
 	name = request.POST.get('user')
