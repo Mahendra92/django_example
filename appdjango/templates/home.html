@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOME PAGE</title>
+	</head>
+	<body>
+		<form action = '/index/' method="POST">{% csrf_token %}
+			<table align="center" border="1">
+				<tr>
+					<td>
+						<h3>USER NAME</h3>
+					</td>
+					<td>
+						<h3>EMAIL ID</h3>
+					</td>
+					<td>
+						<h3>PASSWORD</h3>
+					</td>
+					<td>
+						<h3>SUBMIT</h3>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="user" value="plz enter ur name" style="width:150px; height:50px; ">
+					</td>
+					<td>
+						<input type="text" name="email" value="enter ur email id" style="width:150px; height:50px; ">
+					</td>
+					<td>
+						<input type="password" name="password" style="width:150px; height:50px; ">
+					</td>
+					<td>
+						<input type="submit" value="login" style="width:150px; height:50px; ">
+					</td>
+				</tr>
+			</table>
+			
+		</form>
+		<form action="/show/" method="POST">{% csrf_token %}
+			<input type="submit" value="show all data" style="width:100px; height:50px; ">
+		</form>
+	</body>
+</html>
