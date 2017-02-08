@@ -13,5 +13,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^home/$', home),
     url(r'^index/$', index),
-    # url(r'^show/$', show),
+    
 ]

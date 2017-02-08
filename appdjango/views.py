@@ -19,7 +19,3 @@ def index(request):
 	obj.save()
 	return render(request, 'index.html',{'name':name, 'email':email, 'password':password})
 
-
-# def show(request):
-# 	obj = UserProfile.objects.all()
-# 	return render(request, 'show.html', {'obj':obj})
